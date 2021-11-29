@@ -1,0 +1,24 @@
+{
+    "imposters" : [{
+        "port": 1000,
+    	"protocol": "https",
+    	"name": "Mountebank 101",
+    	"stubs": [
+            "predicates" :[{
+                "equals":{
+                	"method": "GET",
+                	"path": "/mountebank-101"
+                }
+            }],
+            "responses" : [{
+                "is": {
+                    "statusCode": 200,
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "body": {"message":"success"}
+                }
+            }]
+        ]
+    }]
+}
