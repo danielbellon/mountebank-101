@@ -47,3 +47,10 @@ $ npm run mock
 ``` shell
 $ curl --location --request POST 'localhost:8080/step-1'
 ```
+---
+# Step 2
+Now we're going to configure a failing imposter ..
+
+``` shell
+curl --location --request GET 'localhost:9090/step-2'
+```
