@@ -1,0 +1,19 @@
+{
+  "predicates": [
+    {
+      "equals": {
+        "method": "GET",
+        "path": "/step-2"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "is": {
+        "statusCode": 500,
+        "body": "<%- stringify(filename, 'step-2/responses/fail.json') %>",
+        "headers": {"Content-Type": "application/json"}
+      }
+    }
+  ]
+}
