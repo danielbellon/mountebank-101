@@ -7,6 +7,6 @@
     "mock": "mb --configfile mountebank/imposters.ejs --loglevel debug"
   },
   "dependencies": {
-    "mountebank": "^1.14.0"
+    "mountebank": "^2.5.0"
   }
 }
