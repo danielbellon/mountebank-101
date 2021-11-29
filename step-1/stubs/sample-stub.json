@@ -10,9 +10,10 @@
   "responses": [
     {
       "is": {
-        "statusCode": 200
-      },
-      "body": "<%- stringify(filename, '../responses/success.json') %>"
+        "statusCode": 200,
+        "body": "<%- stringify(filename, 'step-1/responses/success.json') %>",
+        "headers": {"Content-Type": "application/json"}
+      }
     }
   ]
 }
