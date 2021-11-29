@@ -32,3 +32,12 @@ $ sudo mb --configfile imposters.ejs
 ```
 Once Mountebank runs with the configuration file, you can test the configured
 imposter in https://localhost:1000/mountebank-101
+
+---
+# Step 1
+In this step we're going to improve the ejs configuration around Mountebank, and now
+we will be able to start the Mountebank server using a npm command:
+
+``` shell
+$ npm run mock
+```

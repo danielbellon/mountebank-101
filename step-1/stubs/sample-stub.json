@@ -1,0 +1,18 @@
+{
+  "predicates": [
+    {
+      "equals": {
+        "method": "POST",
+        "path": "/step-1"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "is": {
+        "statusCode": 200
+      },
+      "body": "<%- stringify(filename, '../responses/success.json') %>"
+    }
+  ]
+}
