@@ -54,3 +54,48 @@ Now we're going to configure a failing imposter ..
 ``` shell
 curl --location --request GET 'localhost:9090/step-2'
 ```
+---
+# Step 3
+In this step we're going to build an SMTP test double, using the bellow instruction:
+
+
+1. Open your command prompt. Now, connect with telnet using the following command:
+
+``` shell
+$ telnet example.com 25
+``` 
+
+2. Type ehlo example.com. Some servers also accept helo in place of ehlo.
+
+``` shell
+$ ehlo example.com
+```
+
+3. Type mail from: username@example.com:
+
+``` shell
+mail from: username@example.com
+``` 
+
+4. Type rcpt to: friend@hotmail.com, friend2@yahoo.com (replace with your actual recipient name):
+
+``` shell
+rcpt to: friend@hotmail.com, friend2@yahoo.com
+``` 
+
+5. To write the message - type data, followed by your subject and message. To end the message, put a period on a line by itself and press enter:
+
+``` shell
+data
+Subject: My Telnet Test Email
+
+Hello,
+
+This is an email sent by using the telnet command.
+
+Your friend,
+Me
+
+.
+``` 
+6. Type quit to exit telnet.
