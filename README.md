@@ -41,3 +41,9 @@ we will be able to start the Mountebank server using a npm command:
 ``` shell
 $ npm run mock
 ```
+
+## Testing imposter ...
+
+``` shell
+$ curl --location --request POST 'localhost:8080/step-1'
+```
